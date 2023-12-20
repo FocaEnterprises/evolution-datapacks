@@ -1,0 +1,14 @@
+{
+  "type": "iceandfire:dragonforge",
+  "dragon_type": "ice",
+  "cook_time": 1000,
+  "input": {
+    "item": "allthemodium:unobtainium_ingot"
+  },
+  "blood": {
+    "item": "allthemodium:vibranium_ingot"
+  },
+  "result": {
+    "item": "allthemodium:unobtainium_vibranium_alloy_ingot"
+  }
+}
