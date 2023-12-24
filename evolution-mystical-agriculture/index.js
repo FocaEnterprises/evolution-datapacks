@@ -73,7 +73,7 @@ const recipes = [
   'quartz_enriched_iron', 'gold', 'lead', 'bronze', 'silver', 'tin',
   'spider', 'creeper', 'skeleton', 'zombie', 'obsidian', 'redstone',
   'glowstone', 'nether_quartz', 'nickel', 'uranium', 'osmium', 'fluorite',
-  'diamond', 'emerald', 'netherite', 'wither_skeleton', 'yellorium'
+  'diamond', 'emerald', 'netherite', 'wither_skeleton', 'yellorium', 'apatite'
 ]
 
 recipes.forEach(name => generateRecipe(name))
