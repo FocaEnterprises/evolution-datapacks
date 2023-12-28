@@ -21,7 +21,7 @@ public class RecipeData implements Data {
     this.recipeType = recipeType;
     this.recipeData = new JSONObject();
 
-    this.recipeData.put("type", recipeType);
+    addData("type", recipeType);
   }
 
   public void writeZipEntry(ZipOutputStream out) throws IOException {
@@ -55,8 +55,13 @@ public class RecipeData implements Data {
     return this;
   }
 
-  public <TYPE extends RecipeItem> RecipeData addEntry(TYPE type) {
-    recipeData.put(type.getName(), type.toJSON());
+  public RecipeData addData(String path, int value) {
+    recipeData.put(path, value);
+    return this;
+  }
+
+  public RecipeData addEntry(String path, RecipeItem item) {
+    recipeData.put(path, item.toJSON());
     return this;
   }
 }
