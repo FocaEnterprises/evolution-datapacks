@@ -3,6 +3,7 @@ package me.giverplay.evolution;
 import me.giverplay.evolution.data.PackData;
 import me.giverplay.evolution.data.RecipeData;
 import me.giverplay.evolution.recipes.iceandfire.AllthemodiumVibraniumFromDragonforgeRecipe;
+import me.giverplay.evolution.recipes.iceandfire.UnobtainiumAllthemodiumFromDragonforgeRecipe;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
@@ -17,6 +18,7 @@ public class EvolutionDatapack {
 
   public void addIceandfireAllthemodium() {
     recipes.add(new AllthemodiumVibraniumFromDragonforgeRecipe());
+    recipes.add(new UnobtainiumAllthemodiumFromDragonforgeRecipe());
   }
 
   public void build() {
