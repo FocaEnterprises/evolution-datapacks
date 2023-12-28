@@ -49,4 +49,14 @@ public class RecipeData implements Data {
   public String getRecipeType() {
     return recipeType;
   }
+
+  public RecipeData addData(String path, String value) {
+    recipeData.put(path, value);
+    return this;
+  }
+
+  public <TYPE extends RecipeItem> RecipeData addEntry(TYPE type) {
+    recipeData.put(type.getName(), type.toJSON());
+    return this;
+  }
 }
