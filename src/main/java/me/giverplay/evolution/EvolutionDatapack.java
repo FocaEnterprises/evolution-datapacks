@@ -2,6 +2,7 @@ package me.giverplay.evolution;
 
 import me.giverplay.evolution.data.PackData;
 import me.giverplay.evolution.data.RecipeData;
+import me.giverplay.evolution.recipes.iceandfire.AllthemodiumVibraniumFromDragonforgeRecipe;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
@@ -13,6 +14,10 @@ import java.util.zip.ZipOutputStream;
 public class EvolutionDatapack {
   private final PackData packData = new PackData();
   private final List<RecipeData> recipes = new ArrayList<>();
+
+  public void addIceandfireAllthemodium() {
+    recipes.add(new AllthemodiumVibraniumFromDragonforgeRecipe());
+  }
 
   public void build() {
     try (ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
