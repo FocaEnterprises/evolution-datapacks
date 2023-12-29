@@ -5,6 +5,7 @@ import me.giverplay.evolution.data.RecipeData;
 import me.giverplay.evolution.recipes.iceandfire.AllthemodiumVibraniumFromDragonforgeRecipe;
 import me.giverplay.evolution.recipes.iceandfire.UnobtainiumAllthemodiumFromDragonforgeRecipe;
 import me.giverplay.evolution.recipes.iceandfire.UnobtainiumVibraniumFromDragonforgeRecipe;
+import me.giverplay.evolution.recipes.mekanism.SulfurDustFromCrushing;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
@@ -21,6 +22,7 @@ public class EvolutionDatapack {
     recipes.add(new AllthemodiumVibraniumFromDragonforgeRecipe());
     recipes.add(new UnobtainiumAllthemodiumFromDragonforgeRecipe());
     recipes.add(new UnobtainiumVibraniumFromDragonforgeRecipe());
+    recipes.add(new SulfurDustFromCrushing());
   }
 
   public void build() {

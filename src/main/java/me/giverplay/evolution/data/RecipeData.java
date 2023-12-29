@@ -60,6 +60,11 @@ public class RecipeData implements Data {
     return this;
   }
 
+  public RecipeData addData(String path, JSONObject json) {
+    recipeData.put(path, json);
+    return this;
+  }
+
   public RecipeData addEntry(String path, RecipeItem item) {
     recipeData.put(path, item.toJSON());
     return this;
