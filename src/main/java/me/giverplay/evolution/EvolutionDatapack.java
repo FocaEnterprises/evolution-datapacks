@@ -22,6 +22,9 @@ public class EvolutionDatapack {
     recipes.add(new AllthemodiumVibraniumFromDragonforgeRecipe());
     recipes.add(new UnobtainiumAllthemodiumFromDragonforgeRecipe());
     recipes.add(new UnobtainiumVibraniumFromDragonforgeRecipe());
+  }
+
+  public void addMekanismThermal() {
     recipes.add(new SulfurDustFromCrushing());
   }
 
